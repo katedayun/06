@@ -3,17 +3,13 @@
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
-void star()
-{
-	int i;
-	for (i=0;i<10;i++)
-	printf("*");
+int square(int a){
+	return a*a;
 }
 
 
 int main(int argc, char *argv[]) {
-	int i;
-	for (i=0;i<3;i++)
-	star();
-	
+	int a=2;
+	a=square(a);
+	printf("a=%i\n",a);
 }
